@@ -3,25 +3,76 @@
   <head>
     <meta charset="UTF-8">
     <title>Reencontrarte</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <script>
-      // Redirección automática al perfil de la mascota en Apps Script
-      window.location.href = "https://script.google.com/macros/s/AKfycbxbqO9i3TCRzfS2DOk5zF3iFCf4xrSkE39H-9JQYWyrc68el_zJ-4c5tpYsgWgMCdk/exec?id=ABC123";
-    </script>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+        background: #111;
+        color: #fff;
+        font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        text-align: center;
+      }
+
+      .fallback-box {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0,0,0,0.8);
+        color: #ccc;
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+        padding: 12px;
+        box-sizing: border-box;
+      }
+
+      .fallback-box a {
+        color: #4ade80;
+        font-weight: 600;
+        text-decoration: none;
+        word-break: break-all;
+      }
+
+      iframe {
+        border: 0;
+        width: 100vw;
+        height: 100vh;
+      }
+
+      .brand {
+        position: absolute;
+        top: 8px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        font-size: 0.8rem;
+        color: #888;
+        font-weight: 500;
+        z-index: 10;
+        pointer-events: none;
+        font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      }
+    </style>
   </head>
-  <body style="background:#111;color:#fff;font-family:sans-serif;text-align:center;padding:2rem;">
-    <h1 style="font-size:1.2rem;font-weight:600;margin-bottom:1rem;">
-      Reencontrarte
-    </h1>
-    <p style="color:#aaa;font-size:0.9rem;line-height:1.4rem;">
-      Redirigiendo a la ficha de la mascota...
-      <br><br>
-      Si no se abre solo, tocá este enlace:
-      <br>
-      <a style="color:#4ade80;font-weight:600;"
-         href="https://script.google.com/macros/s/AKfycbxbqO9i3TCRzfS2DOk5zF3iFCf4xrSkE39H-9JQYWyrc68el_zJ-4c5tpYsgWgMCdk/exec?id=ABC123">
+  <body>
+    <div class="brand">Reencontrarte</div>
+
+    <iframe
+      src="https://script.google.com/macros/s/AKfycbxbqO9i3TCRzfS2DOk5zF3iFCf4xrSkE39H-9JQYWyrc68el_zJ-4c5tpYsgWgMCdk/exec?id=ABC123"
+      allow="clipboard-read; clipboard-write; geolocation"
+    >
+    </iframe>
+
+    <div class="fallback-box">
+      Si no ves la ficha de la mascota arriba, tocá este enlace:<br>
+      <a href="https://script.google.com/macros/s/AKfycbxbqO9i3TCRzfS2DOk5zF3iFCf4xrSkE39H-9JQYWyrc68el_zJ-4c5tpYsgWgMCdk/exec?id=ABC123">
         Abrir ficha
       </a>
-    </p>
+    </div>
   </body>
 </html>
+
