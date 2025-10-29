@@ -1,78 +1,57 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Reencontrarte</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <script>
+      // Redirección directa a la ficha pública del animal en tu Apps Script
+      // IMPORTANTE: reemplazá la URL de abajo por TU URL REAL /exec?id=LOQUESEA
+      window.location.replace("https://script.google.com/macros/s/TU_DEPLOY_ID/exec?id=ABC123");
+    </script>
+
     <style>
-      html, body {
-        margin: 0;
-        padding: 0;
+      body {
         background: #111;
         color: #fff;
         font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-        height: 100%;
-        width: 100%;
-        overflow: hidden;
         text-align: center;
+        padding: 2rem;
       }
-
-      .fallback-box {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background: rgba(0,0,0,0.8);
-        color: #ccc;
-        font-size: 0.8rem;
-        line-height: 1.2rem;
-        padding: 12px;
-        box-sizing: border-box;
+      h1 {
+        color: #888;
+        font-size: 1rem;
+        font-weight: 500;
+        margin: 0 0 0.5rem;
       }
-
-      .fallback-box a {
+      a {
         color: #4ade80;
         font-weight: 600;
-        text-decoration: none;
         word-break: break-all;
+        text-decoration: none;
+        font-size: 0.9rem;
+        line-height: 1.4rem;
       }
-
-      iframe {
-        border: 0;
-        width: 100vw;
-        height: 100vh;
-      }
-
-      .brand {
-        position: absolute;
-        top: 8px;
-        left: 0;
-        right: 0;
-        text-align: center;
-        font-size: 0.8rem;
-        color: #888;
-        font-weight: 500;
-        z-index: 10;
-        pointer-events: none;
-        font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      p {
+        color: #aaa;
+        font-size: 0.9rem;
+        line-height: 1.4rem;
+        margin: 0.5rem 0;
       }
     </style>
   </head>
+
   <body>
-    <div class="brand">Reencontrarte</div>
+    <h1>Reencontrarte</h1>
 
-    <iframe
-      src="https://script.google.com/macros/s/AKfycbxbqO9i3TCRzfS2DOk5zF3iFCf4xrSkE39H-9JQYWyrc68el_zJ-4c5tpYsgWgMCdk/exec?id=ABC123"
-      allow="clipboard-read; clipboard-write; geolocation"
-    >
-    </iframe>
+    <p>Redirigiendo a la ficha de la mascota...</p>
 
-    <div class="fallback-box">
-      Si no ves la ficha de la mascota arriba, tocá este enlace:<br>
+    <p>
+      Si no se abre en unos segundos, tocá este enlace:<br />
       <a href="https://script.google.com/macros/s/AKfycbxbqO9i3TCRzfS2DOk5zF3iFCf4xrSkE39H-9JQYWyrc68el_zJ-4c5tpYsgWgMCdk/exec?id=ABC123">
         Abrir ficha
       </a>
-    </div>
+    </p>
   </body>
 </html>
-
